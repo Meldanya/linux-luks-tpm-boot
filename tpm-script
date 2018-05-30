@@ -1,5 +1,13 @@
 #!/bin/sh 
  
+case $1 in
+# get pre-requisites
+prereqs)
+	echo ''
+	exit 0
+	;;
+esac
+
 # configure the tpm 
 chown tss:tss /dev/tpm0 
 chmod 600 /dev/tpm0 
